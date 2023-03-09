@@ -1,3 +1,31 @@
+.homecontent .row {
+  justify-content: center;
+  align-items: center;
+  display: table;
+}
+.homecontent .row img {
+  height: 100%;
+  width: 100%;
+}
+.homecontent .row .col {
+  text-align: center;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.homecontent .row .col h1 {
+  font-size: 36pt;
+  font-weight: bolder;
+  color: #FFF;
+}
+.homecontent .row .col h3 {
+  font-size: 16pt;
+  font-style: oblique;
+  color: #FFF;
+}
+
+/*# sourceMappingURL=styles.css.map */
 
 
 /*# sourceMappingURL=styles.css.map */
@@ -19,6 +47,27 @@ h1, h2, h3, h4, h5, h6, p {
     position: fixed;
     left: 10px;
 
+}
+
+.links .icon img {
+  width: 33px;
+  height: 33px;    
+  justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #D8CC34;
+}
+
+.links p {
+  color: #FFF;
+  font-weight:bolder;
+  font-style: oblique; 
+  margin: 50px;
+  margin:-100px;
+  width: 500px; 
+  /* justify-content: center;
+  align-items: center;
+  display: flex; */
 }
 
 .bars {
@@ -136,6 +185,14 @@ a:hover {
 
 
 @media screen and (max-width: 960px) {
+  .links .icon img{
+    display: none;
+  }
+
+  .links p {
+    display: none;
+  }
+
   .bars {
     display: block;
   }
@@ -145,6 +202,34 @@ a:hover {
     opacity: 0;
     flex-direction: column;
   }
+
+  .homecontent .row {
+    justify-content: center;
+    align-items: center;
+    display: table;
+  }
+  .homecontent .row img {
+    height: 100vh;
+    object-fit: cover;
+  }
+  .homecontent .row .col {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .homecontent .row .col h1 {
+    font-size: 36pt;
+    font-weight: bolder;
+    color: #FFF;
+  }
+  .homecontent .row .col h3 {
+    font-size: 16pt;
+    font-style: oblique;
+    color: #FFF;
+  }
+  
 
 }
 
